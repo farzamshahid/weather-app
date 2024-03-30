@@ -77,7 +77,8 @@ const Weather = () => {
                         <p className='description'>
                             {
                                 weatherData && weatherData.weather && weatherData.weather[0]
-                                    ? weatherData?.weather[0].description
+                                    ? weatherData?.weather?.[0]?.description
+
                                     : ''
 
                             }
